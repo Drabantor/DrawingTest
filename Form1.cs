@@ -10,6 +10,8 @@ namespace DrawingTest
 
         private void FrmMain_Paint(object sender, PaintEventArgs e)
         {
+            //***Dirt and House using retangles***
+
             Graphics g = e.Graphics; //create a Graphics object
 
             Pen myDrawingPen = new Pen(Color.White); //create a pen object
@@ -17,10 +19,10 @@ namespace DrawingTest
 
             g.FillRectangle(myDrawingBrush, 0, 760, 1425, 50);
             g.DrawRectangle(myDrawingPen, 620, 510, 250, 250);
-        }
 
-        private void DrawBezierPoint(object sender, PaintEventArgs e)
-        {
+
+            //***Draw a Bezier curve***
+
             // Create pen.
             Pen blackPen = new Pen(Color.Black, 3);
 
